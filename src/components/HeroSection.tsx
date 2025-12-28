@@ -4,7 +4,6 @@ import skillsData from '@/data/skills.json';
 import ProfilePhotoCard from './ProfilePhotoCard';
 
 const HeroSection: React.FC = () => {
-    console.log("HeroSection rendering", profileData);
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [loopNum, setLoopNum] = useState(0);

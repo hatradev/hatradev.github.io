@@ -1,6 +1,6 @@
 import React from 'react';
-import logoLight from '@/assets/logo/logo-light.png';
-import logoDark from '@/assets/logo/logo-dark.png';
+import logoLight from '~/assets/logo/logo-light.png';
+import logoDark from '~/assets/logo/logo-dark.png';
 import profileData from '@/data/profile.json';
 
 interface FooterProps {

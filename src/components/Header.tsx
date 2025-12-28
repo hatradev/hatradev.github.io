@@ -1,8 +1,8 @@
 import React from 'react';
-import logoLight from '@/assets/logo/logo-light.png';
-import logoDark from '@/assets/logo/logo-dark.png';
-import sunIcon from '@/assets/icons/outline-sun.svg';
-import moonIcon from '@/assets/icons/outline-moon.svg';
+import logoLight from '~/assets/logo/logo-light.png';
+import logoDark from '~/assets/logo/logo-dark.png';
+import sunIcon from '~/assets/icons/outline-sun.svg';
+import moonIcon from '~/assets/icons/outline-moon.svg';
 
 interface HeaderProps {
     darkMode: boolean;

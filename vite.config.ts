@@ -12,6 +12,10 @@ export default defineConfig({
         find: '@',
         replacement: '/src',
       },
+      {
+        find: '~',
+        replacement: '/public',
+      },
     ],
   },
 })
