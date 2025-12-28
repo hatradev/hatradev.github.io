@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const ProfilePhotoCard: React.FC = () => {
   // Load images using Vite's glob import
   // We use a glob pattern to match the images in the profile folder
-  const imagesGlob = import.meta.glob('/src/assets/images/profile/*.{png,jpg,jpeg,svg}', { eager: true });
+  const imagesGlob = import.meta.glob('/assets/images/profile/*.{png,jpg,jpeg,svg}', { eager: true });
   
   // Convert the glob object to an array of image URLs
   // The values in imagesGlob are modules with a default export containing the URL
