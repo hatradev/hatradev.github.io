@@ -3,30 +3,6 @@ import profileData from '@/data/profile.json';
 import skillsData from '@/data/skills.json';
 import ProfilePhotoCard from './ProfilePhotoCard';
 
-// Load icons
-const iconsGlob = import.meta.glob('/src/assets/icons/*.svg', { eager: true });
-
-const getIconUrl = (path: string) => {
-    // Try to find the icon in the glob results
-    // 1. Try exact match
-    // 2. Try with leading slash
-    // 3. Try matching just the filename
-
-    if (iconsGlob[path]) return (iconsGlob[path] as any).default;
-
-    const withSlash = path.startsWith('/') ? path : `/${path}`;
-    if (iconsGlob[withSlash]) return (iconsGlob[withSlash] as any).default;
-
-    // Fallback: try to find by filename
-    const filename = path.split('/').pop();
-    if (filename) {
-        const foundKey = Object.keys(iconsGlob).find(key => key.endsWith(filename));
-        if (foundKey) return (iconsGlob[foundKey] as any).default;
-    }
-
-    return path;
-};
-
 const HeroSection: React.FC = () => {
     console.log("HeroSection rendering", profileData);
     const [text, setText] = useState('');
