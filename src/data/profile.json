@@ -1,0 +1,39 @@
+{
+    "name": "Tra Hoang",
+    "fullName": "Hoang Anh Tra",
+    "titles": [
+        "Software Engineer Fresher",
+        "AI Enthusiast",
+        "Tech Blogger"
+    ],
+    "description": "Hi! I'm Tra Hoang, a passionate senior student majoring in Software Engineering at the University of Science with a strong foundation in programming and problem-solving. I'm eager to continuously learn and enhance my expertise, with a dedicated goal of becoming a proficient software engineer.",
+    "cvUrl": "",
+    "profileImagesFolder": "src/assets/images/profile/",
+    "socialUrl": [
+        {
+            "name": "GitHub",
+            "icon": "src/assets/icons/solid-github.svg",
+            "link": "https://github.com/hatradev"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "src/assets/icons/solid-linkedin.svg",
+            "link": "https://www.linkedin.com/in/trahoang-rt/"
+        },
+        {
+            "name": "Facebook",
+            "icon": "src/assets/icons/solid-facebook.svg",
+            "link": "https://www.facebook.com/trahoang.demo"
+        },
+        {
+            "name": "Kaggle",
+            "icon": "src/assets/icons/solid-kaggle.svg",
+            "link": "https://www.kaggle.com/hoangtra"
+        },       
+        {
+            "name": "Email",
+            "icon": "src/assets/icons/solid-envelope.svg",
+            "link": "mailto:hatra.dev@gmail.com"
+        }
+    ]
+}

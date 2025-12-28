@@ -1,0 +1,56 @@
+[
+    {
+        "name": "React",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "link": "https://reactjs.org/",
+        "level": "Beginner"
+    },
+    {
+        "name": "TypeScript",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "link": "https://www.typescriptlang.org/",
+        "level": "Beginner"
+    },
+    {
+        "name": "JavaScript",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "level": "Beginner"
+    },
+    {
+        "name": "Tailwind CSS",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        "link": "https://tailwindcss.com/",
+        "level": "Beginner"
+    },
+    {
+        "name": "Node.js",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        "link": "https://nodejs.org/",
+        "level": "Beginner"
+    },
+    {
+        "name": "Python",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        "link": "https://www.python.org/",
+        "level": "Beginner"
+    },
+    {
+        "name": "Git",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+        "link": "https://git-scm.com/",
+        "level": "Beginner"
+    },
+    {
+        "name": "Docker",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+        "link": "https://www.docker.com/",
+        "level": "Beginner"
+    },
+    {
+        "name": "C++",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+        "link": "https://isocpp.org/",
+        "level": "Beginner"
+    }
+]
