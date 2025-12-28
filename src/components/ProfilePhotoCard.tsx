@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import profileData from '@/data/profile.json';
 
 const ProfilePhotoCard: React.FC = () => {
-  // Load images using Vite's glob import
-  // We use a glob pattern to match the images in the profile folder
-  const imagesGlob = import.meta.glob('/assets/images/profile/*.{png,jpg,jpeg,svg}', { eager: true });
-  
-  // Convert the glob object to an array of image URLs
-  // The values in imagesGlob are modules with a default export containing the URL
-  const images = Object.values(imagesGlob).map((mod: any) => mod.default);
+  // Load images from profile data
+  const images = profileData.profileImages.map(img => {
+    const folder = profileData.profileImagesFolder.startsWith('/') 
+      ? profileData.profileImagesFolder 
+      : `/${profileData.profileImagesFolder}`;
+    return `${folder}${img}`;
+  });
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,7 +17,7 @@ const ProfilePhotoCard: React.FC = () => {
     
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 15000); // Change every 30 seconds
+    }, 15000); // Change every 15 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
