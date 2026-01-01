@@ -1,4 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import GraduationCap from '~/assets/icons/solid-graduation-cap.svg';
+import Briefcase from '~/assets/icons/solid-briefcase.svg';
+import Handshake from '~/assets/icons/solid-handshake.svg';
 import LandingBackground from '@/components/LandingBackground';
 import HeroSection from '@/components/HeroSection';
 import ProjectCard from '@/components/ProjectCard';
@@ -61,8 +65,10 @@ const HomePage: React.FC = () => {
             <section className="py-24 bg-surface/50 relative">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">My Journey</h2>
-                        <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+                        <Link to="/experience" className="group inline-block">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block group-hover:opacity-80 transition-opacity">My Journey</h2>
+                            <div className="h-1 w-20 bg-primary mx-auto rounded-full group-hover:w-32 transition-all duration-300"></div>
+                        </Link>
                     </div>
 
                     <div className="relative max-w-4xl mx-auto">
@@ -70,10 +76,19 @@ const HomePage: React.FC = () => {
                         <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-muted/20"></div>
 
                         <div className="space-y-12">
-                            {experienceData.map((exp, index) => (
+                            {[...experienceData].sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime()).map((exp, index) => (
                                 <div key={index} className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                                     {/* Timeline Dot */}
-                                    <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-sm z-10 mt-1.5"></div>
+                                    <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-primary border-4 border-surface shadow-sm z-10 flex items-center justify-center">
+                                        {(() => {
+                                            switch (exp.type?.toLowerCase()) {
+                                                case 'learning': return <img src={GraduationCap} alt="Learning" className="w-5 h-5 brightness-0 invert" />;
+                                                case 'working': return <img src={Briefcase} alt="Working" className="w-5 h-5 brightness-0 invert" />;
+                                                case 'volunteering': return <img src={Handshake} alt="Volunteering" className="w-5 h-5 brightness-0 invert" />;
+                                                default: return <img src={Briefcase} alt="Working" className="w-5 h-5 brightness-0 invert" />;
+                                            }
+                                        })()}
+                                    </div>
 
                                     {/* Content */}
                                     <div className="flex-1 md:w-1/2 pl-8 md:pl-0">
@@ -82,17 +97,14 @@ const HomePage: React.FC = () => {
                                                 {exp.startDate} - {exp.endDate}
                                             </span>
                                             <h3 className="text-xl font-bold text-text">{exp.position}</h3>
-                                            <h4 className="text-lg text-secondary font-medium mb-2">{exp.company}</h4>
-                                            <p className="text-muted text-sm leading-relaxed mb-4">
-                                                {exp.description}
-                                            </p>
-                                            <div className={`flex flex-wrap gap-2 ${index % 2 === 0 ? 'justify-start' : 'justify-start md:justify-end'}`}>
-                                                {exp.technologies.map((tech) => (
-                                                    <span key={tech} className="text-xs text-muted bg-muted/5 px-2 py-1 rounded">
-                                                        {tech}
-                                                    </span>
-                                                ))}
-                                            </div>
+                                            <a 
+                                                href={exp.companyUrl} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer" 
+                                                className="text-lg text-secondary font-medium mb-2 hover:underline inline-block"
+                                            >
+                                                {exp.company}
+                                            </a>
                                         </div>
                                     </div>
 

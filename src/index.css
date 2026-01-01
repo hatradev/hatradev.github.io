@@ -44,6 +44,13 @@ body {
   }
 }
 
+@layer utilities {
+  .text-3xl, .text-4xl, .text-5xl {
+    line-height: 1.4;
+    padding-bottom: 0.1em;
+  }
+}
+
 @layer base {
   html {
     font-family: "Inter", "JetBrains Mono", sans-serif;

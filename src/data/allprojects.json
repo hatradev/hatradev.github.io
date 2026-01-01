@@ -6,6 +6,45 @@
         "techStacks": [],
         "projectUrl": "",
         "githubUrl": "",
-        "imageUrls": []
+        "imageUrls": [],
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "name": "Splitly",
+        "description": "",
+        "tags": [],
+        "techStacks": [],
+        "projectUrl": "",
+        "githubUrl": "",
+        "imageUrls": [],
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "name": "SABase",
+        "description": "",
+        "tags": [],
+        "techStacks": [],
+        "projectUrl": "",
+        "githubUrl": "",
+        "imageUrls": [],
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "name": "FAME: Frequency-Aware Multi-scale Ensemble",
+        "description": "FAME is a framework for financial time series forecasting with frequency-aware decomposition and multi-scale ensemble learning. It provides a user-friendly interface (via Streamlit) to upload or select datasets, train hybrid models, visualize results, and evaluate predictive performance.",
+        "tags": ["Deep Learning", "Time Series Forecasting", "Finance", "Hybrid Models", "Explainable AI", "Empirical Mode Decomposition"],
+        "techStacks": ["Python", "Streamlit", "TensorFlow", "Keras", "Pandas", "NumPy", "Matplotlib"],
+        "projectUrl": "",
+        "githubUrl": "https://github.com/hatradev/FAME",
+        "imageUrls": [
+            "/assets/images/projects/fame_1.png",
+            "/assets/images/projects/fame_2.png",
+            "/assets/images/projects/fame_3.png"
+        ],
+        "startDate": "2025-01-01",
+        "endDate": "2025-08-15"
     }
 ]

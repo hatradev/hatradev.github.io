@@ -7,6 +7,7 @@ import AllPostsPage from '@/pages/AllPostsPage'
 import ProjectPage from '@/pages/ProjectPage'
 import PostPage from '@/pages/PostPage'
 import NotFound from '@/pages/NotFound'
+import ExperiencePage from '@/pages/ExperiencePage'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -35,6 +36,7 @@ function App() {
           <Route path="/projects/:slug" element={<ProjectPage />} />
           <Route path="/blog" element={<AllPostsPage />} />
           <Route path="/blog/:slug" element={<PostPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

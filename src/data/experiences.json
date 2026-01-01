@@ -1,7 +1,7 @@
 [
     {
         "type": "learning",
-        "position": "Software Engineering Student",
+        "position": "Information Technology Student",
         "company": "University of Science - VNUHCM",
         "companyUrl": "https://www.hcmus.edu.vn/",
         "location": "Ho Chi Minh City, Vietnam",
@@ -15,6 +15,22 @@
             "Data Structures",
             "Algorithms",
             "Database Management"
+        ]
+    },
+    {
+        "type": "volunteering",
+        "position": "Event Operator - President",
+        "company": "Student Activities Board",
+        "companyUrl": "https://facebook.com/sab.ctda",
+        "location": "Ho Chi Minh City, Vietnam",
+        "startDate": "2021-10-31",
+        "endDate": "2024-12-31",
+        "description": "Led and organized various student events and activities, coordinating with teams to ensure successful execution. Developed leadership and organizational skills while fostering a vibrant campus community.",
+        "technologies": [
+            "Event Organizing",
+            "Team Leadership",
+            "Project Management",
+            "Communication"
         ]
     }
 ]

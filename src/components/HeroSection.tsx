@@ -36,15 +36,15 @@ const HeroSection: React.FC = () => {
     }, [text, isDeleting, loopNum, titles, typingSpeed]);
 
     return (
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-6 py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-80px)]">
+        <div className="relative z-10 max-w-7xl w-full mx-auto px-6 pt-12 pb-24 md:py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-80px)]">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left space-y-6">
                 <h2 className="text-2xl font-medium text-muted">Hello, I'm</h2>
                 <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary pb-2">
                     {profileData.name}
                 </h1>
-                <div className="h-8 text-xl md:text-3xl font-semibold text-text flex justify-center md:justify-start items-center gap-2">
-                    <span>I am a</span>
+                <div className="h-8 text-lg md:text-2xl font-semibold text-text flex justify-center md:justify-start items-center gap-1 md:gap-2">
+                    <span className="min-w-[60px]">I am a</span>
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{text}</span>
                     <span className="animate-pulse">|</span>
                 </div>
